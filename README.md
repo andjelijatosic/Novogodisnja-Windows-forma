@@ -1,7 +1,7 @@
 # Novogodisnja-Windows-forma
 Projekat iz objektno-orijentisanog programiranja
 
-Jovana Janjatović i Anđelija Tošić III-6
+Jovana Janjatović, Luka Marković i Anđelija Tošić,  III-6
 
 Ideja:
 
@@ -13,9 +13,17 @@ Jelka
 Poklon
 Ukras
 Korpa 
+Patuljak 
 
 Podela posla unutar tima:
-Jovana - pravi klase: poklon, korpa
-Andjelija - pravi klase: jelka, ukras
+
+Jovana - pravi klase: poklon, 
+
+Luka - pravi klase: patuljak, 
+
+Andjelija - pravi klase: jelka
+
+
+
 
 Vreme izrade projekta: 6. decembar - 
