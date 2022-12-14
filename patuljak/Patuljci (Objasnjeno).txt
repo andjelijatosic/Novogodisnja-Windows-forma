@@ -1,0 +1,1 @@
+Uglavnom, u slučaju da ne stignem, a hoću, glavna ideja iza patuljaka je to da su im ruke i noge podeljenje i imaju zglobove. Treba napraviti 5 funkcija u klasi (Jasnije u slici).
