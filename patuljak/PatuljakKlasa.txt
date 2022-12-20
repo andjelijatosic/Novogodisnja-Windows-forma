@@ -7,12 +7,12 @@ using System.Drawing;
 
 namespace Patuljakdju
 {
-    internal class ok
+    internal class kralj
     {
         private int w;
         private int h;
         private Point a;
-        
+
         public void Setsve(int W, int H, Point A)
         {
             w = W;
@@ -33,10 +33,10 @@ namespace Patuljakdju
             g.DrawPolygon(olibi, torso);
             g.FillPolygon(debeliolibi, torso);
             /* Leva Noga */
-            Point b1 = new Point(a.X - w / 2, a.Y + h/2);
-            Point b2 = new Point(a.X - w / 6, a.Y + h/2);
-            Point b3 = new Point(a.X - w / 2, a.Y + (h/3) * 2);
-            Point b4 = new Point(a.X - w / 6, a.Y + (h/3) * 2);
+            Point b1 = new Point(a.X - w / 2, a.Y + h / 2);
+            Point b2 = new Point(a.X - w / 6, a.Y + h / 2);
+            Point b3 = new Point(a.X - w / 2, a.Y + (h / 3) * 2);
+            Point b4 = new Point(a.X - w / 6, a.Y + (h / 3) * 2);
             Point b5 = new Point(a.X - w / 2, a.Y + h);
             Point b6 = new Point(a.X - w / 6, a.Y + h);
             Point[] levanoga1 = { b1, b2, b4, b3 };
@@ -54,16 +54,16 @@ namespace Patuljakdju
             Point c6 = new Point(a.X + w / 6, a.Y + h);
             Point[] desnanoga1 = { c1, c2, c4, c3 };
             Point[] desnanoga2 = { c4, c3, c5, c6 };
-            g.DrawPolygon(olibi,desnanoga1);
-            g.FillPolygon(debeliolibi,desnanoga1);
-            g.DrawPolygon(olibi,desnanoga2);
-            g.FillPolygon(debeliolibi,desnanoga2);
+            g.DrawPolygon(olibi, desnanoga1);
+            g.FillPolygon(debeliolibi, desnanoga1);
+            g.DrawPolygon(olibi, desnanoga2);
+            g.FillPolygon(debeliolibi, desnanoga2);
             /* Leva Ruka */
             Point d1 = new Point(a.X - w / 2, a.Y - h / 2);
             Point d2 = new Point(a.X - w / 2, a.Y - h / 3);
-            Point d3 = new Point(a.X - w - w/3,a.Y - h / 3);
-            Point d4 = new Point(a.X - w - w/3,a.Y - h/6);
-            Point d5 = new Point(a.X - w / 2, a.Y - h/6);
+            Point d3 = new Point(a.X - w - w / 3, a.Y - h / 3);
+            Point d4 = new Point(a.X - w - w / 3, a.Y - h / 6);
+            Point d5 = new Point(a.X - w / 2, a.Y - h / 6);
             Point d6 = new Point(a.X - w / 2, a.Y);
             Point[] levaruka1 = { d1, d2, d4, d3 };
             Point[] levaruka2 = { d4, d3, d5, d6 };
@@ -84,6 +84,24 @@ namespace Patuljakdju
             g.FillPolygon(debeliolibi, desnaruka1);
             g.DrawPolygon(olibi, desnaruka2);
             g.FillPolygon(debeliolibi, desnaruka2);
+            /* Glava */
+            Point f1 = new Point(a.X - (w / 2 + w / 4) / 2, a.Y - h / 2 - w / 2 - w / 4 );
+            g.DrawEllipse(olibi, f1.X, f1.Y, w/2 + w/4, w/2 + w/4);
+            g.FillEllipse(debeliolibi, f1.X, f1.Y, w / 2 + w / 4, w / 2 + w / 4);
+            /* Kapa */
+            Point g1 = new Point(a.X - w / 2, a.Y - h/2 - w / 2 - w / 4);
+            Point g2 = new Point(a.X - w / 2, a.Y - h/2 - w / 2 - w / 4 - h / 8);
+            Point g3 = new Point(a.X + w / 2, a.Y - h/2 - w / 2 - w / 4);
+            Point g4 = new Point(a.X + w / 2, a.Y - h/2 - w / 2 - w / 4 - h / 8);
+            Point g5 = new Point(a.X - w /2 + w /8, a.Y - h / 2 - w / 2 - w / 4 - h / 8);
+            Point g6 = new Point(a.X + w/2  - w/8, a.Y - h / 2 - w / 2 - w / 4 - h / 8);
+            Point g7 = new Point(a.X,a.Y - h / 2 - h / 4- w / 2 - w / 4 - h / 8);
+            Point[] DonjiDeoKape = { g1, g2, g4, g3 };
+            Point[] GornjiDeoKape = { g5, g6, g7 };
+            g.FillPolygon(debeliolibi, DonjiDeoKape);
+            g.DrawPolygon(olibi, DonjiDeoKape);
+            g.FillPolygon(debeliolibi, GornjiDeoKape);
+            g.DrawPolygon(olibi, GornjiDeoKape);
         }
     }
 }
