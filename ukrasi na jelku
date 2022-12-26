@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using jelkaa;
+namespace ukras
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        int x, y;
+        int n, m, a = 200;
+        Color boja;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Graphics g = CreateGraphics();
+            n = ClientRectangle.Width / 2 - a;
+            m = ClientRectangle.Height / 2 + a;
+            jelka Jelka = new jelka(n, m, a);
+            Jelka.crtaj(g);
+            boja = Color.FromArgb(r.Next(256), r.Next(256), r.Next(256));
+            x = r.Next(ClientRectangle.Width);
+            y = r.Next(ClientRectangle.Height);
+            Point t = new Point(x, y);
+            if (Jelka.SadrziTacku(t) == true)
+            {
+                ukras Ukras = new ukras(x, y, boja);
+                Ukras.crtaj(g);
+            }
+        }
+
+        Random r = new Random();
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            timer1.Interval = 200;
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = CreateGraphics();
+            n = ClientRectangle.Width / 2 - a;
+            m = ClientRectangle.Height / 2 + a;
+            jelka Jelka = new jelka(n, m, a);
+            Jelka.crtaj(g);
+        }
+    }
+}
