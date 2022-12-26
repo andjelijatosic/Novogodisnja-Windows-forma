@@ -25,7 +25,10 @@ namespace poklon
         {
             centar =  new Point(0, 0);
         }
-
+        public Point getPolozaj()
+        {
+            return centar;
+        }
         public void Crtaj(Graphics g)
         {
             SolidBrush cetkica1 = new SolidBrush(boja_omotaca);
@@ -69,12 +72,13 @@ namespace poklon
             g.FillEllipse(trakica, centar.X - a / 2 + 11, centar.Y - 3 * a / 2, 3 * a / 2, a/2);
             g.DrawEllipse(crna, centar.X - a - 11, centar.Y - 3 * a / 2, 3 * a / 2, a / 2);
             g.DrawEllipse(crna, centar.X - a / 2 + 11, centar.Y - 3 * a / 2, 3 * a / 2, a / 2);
-
-            
-
-
-
-
+        }
+        public void smanjiY(int d)
+        {
+            int x = centar.X;
+            int y = centar.Y + d;
+            Point p = new Point(x, y);
+            centar = p;
         }
     }
 }
