@@ -18,12 +18,14 @@ Patuljak
 Podela posla unutar tima:
 
 Jovana - pravi klase: poklon
+Sređuje da pokloni padaju 
 
 Luka - pravi klase: patuljak
+Sređuje Background
 
-Anđelija - pravi klase: jelka
+Anđelija - pravi klase: jelka, korpa, ukras
+Omogućuje da se korpa kreće pokretima miša
 
 
 
-
-Vreme izrade projekta: 6. decembar - 
+Vreme izrade projekta: 6. decembar - 28. decembar
