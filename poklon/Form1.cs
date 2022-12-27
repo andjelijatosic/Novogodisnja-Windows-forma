@@ -35,7 +35,6 @@ namespace poklon
                 polozaj = new Point( r.Next(a, ClientRectangle.Width - a), 0);
                 poklon p = new poklon(polozaj, a, boja1, boja2);
                 Pniz[br] = p;
-
             }
         }
 
