@@ -1,0 +1,11 @@
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\bin\Debug\Novogodisnja Windows forma.exe.config
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\bin\Debug\Novogodisnja Windows forma.exe
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\bin\Debug\Novogodisnja Windows forma.pdb
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.csproj.AssemblyReference.cache
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.csproj.SuggestedBindingRedirects.cache
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja_Windows_forma.Form1.resources
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja_Windows_forma.Properties.Resources.resources
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.csproj.GenerateResource.cache
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.csproj.CoreCompileInputs.cache
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.exe
+D:\Documents\škola\treca godina\objektno\windows forms\Novogodisnja Windows forma\Novogodisnja Windows forma\obj\Debug\Novogodisnja Windows forma.pdb
