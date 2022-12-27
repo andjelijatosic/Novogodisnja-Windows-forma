@@ -42,8 +42,8 @@ namespace jelkaa
             Point t2 = new Point(x + a, y - a);
             Point t3 = new Point(x + 2 * a, y);
             Point d1 = new Point(t1.X - m.X, t1.Y - m.Y);
-            Point d2 = new Point(t2.X - m.X, t2.Y - m.Y)
-            Point d3 = new Point(t3.X - m.X, t3.Y - m.Y)
+            Point d2 = new Point(t2.X - m.X, t2.Y - m.Y);
+            Point d3 = new Point(t3.X - m.X, t3.Y - m.Y);
             Point n1 = new Point(t3.X - t1.X, t3.Y - t1.Y);
             Point n2 = new Point(t2.X - t1.X, t2.Y - t1.Y);
             int povrsina;
@@ -55,8 +55,8 @@ namespace jelkaa
             Point t5 = new Point(x + a, y - a - a / 2 + a / 4);
             Point t6 = new Point(x + a / 2 + a, y - a + a / 4);
             Point d4 = new Point(t4.X - m.X, t4.Y - m.Y);
-            Point d5 = new Point(t5.X - m.X, t5.Y - m.Y)
-            Point d6 = new Point(t6.X - m.X, t6.Y - m.Y)
+            Point d5 = new Point(t5.X - m.X, t5.Y - m.Y);
+            Point d6 = new Point(t6.X - m.X, t6.Y - m.Y);
             Point n3 = new Point(t6.X - t4.X, t6.Y - t4.Y);
             Point n4 = new Point(t5.X - t4.X, t5.Y - t4.Y);
             int povrsina2;
@@ -68,8 +68,8 @@ namespace jelkaa
             Point t8 = new Point(x + a, y - a - a / 2 - a / 4 + a / 4 + a / 8);
             Point t9 = new Point(x + a + a / 4, y - a - a / 2 + a / 4 + a / 8);
             Point d7 = new Point(t7.X - m.X, t7.Y - m.Y);
-            Point d8 = new Point(t8.X - m.X, t8.Y - m.Y)
-            Point d9 = new Point(t9.X - m.X, t9.Y - m.Y)
+            Point d8 = new Point(t8.X - m.X, t8.Y - m.Y);
+            Point d9 = new Point(t9.X - m.X, t9.Y - m.Y);
             Point n5 = new Point(t9.X - t7.X, t9.Y - t7.Y);
             Point n6 = new Point(t8.X - t7.X, t8.Y - t7.Y);
             int povrsina3;
