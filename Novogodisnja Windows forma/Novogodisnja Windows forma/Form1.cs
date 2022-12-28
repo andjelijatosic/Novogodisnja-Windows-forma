@@ -23,6 +23,7 @@ namespace bezi_od_poklona
         int a = 30;
         int n = 4;
         int x;
+        int ipsilon;
         poklon[] Pniz = new poklon[4];
         bool goleft;
         bool goright;
@@ -34,8 +35,7 @@ namespace bezi_od_poklona
             boja1 = Color.FromArgb(r.Next(256), r.Next(0), r.Next(0));
             boja2 = Color.FromArgb(r.Next(0), r.Next(240), r.Next(0));
             timer1.Enabled = true;
-            timer1.Interval = 500;
-0;
+            timer1.Interval = 1000;
             timer2.Enabled = true;
             timer2.Interval = 500;
             for (int br = 0; br < n; br++)
@@ -47,28 +47,36 @@ namespace bezi_od_poklona
             Graphics g = CreateGraphics();
             jelkaa = new jelka(70, ClientRectangle.Height - 30, 170);
             jelkaa.crtaj(g);
-            patuljak.Setsve(50, 100, new Point(ClientRectangle.Width - 100, ClientRectangle.Height - 100));
+            patuljak.Setsve(50, 100, new Point(200, ClientRectangle.Height - 100));
 
         }
-
+        int m=0;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            ipsilon = ClientRectangle.Height - 100;
             Graphics g = CreateGraphics();
             for (int br = 0; br < n; br++)
             {
-                poklon p = new poklon();
-                p = Pniz[br];
+                poklon p = new poklon();            
                 Pniz[br].smanjiY(50);
                 Pniz[br].Crtaj(g);
-                Refresh();
+
+                p = Pniz[br];
                 if (p.getPolozaj().Y > ClientRectangle.Height)
                 {
-                    Pniz[br].smanjiY(-ClientRectangle.Height);
+                    Pniz[br].smanjiY(-ClientRectangle.Height);        
                 }
-                if (p.getPolozaj().X == ipsilon && p.getPolozaj().Y == ClientRectangle.Width - 100)
+                if ((p.getPolozaj().X > iks -70  && p.getPolozaj().X < iks + 70) && (p.getPolozaj().Y > ipsilon-100  && p.getPolozaj().Y < ipsilon + 100))
                 {
-                    //fgndfgsnhdg
+                    m = 1;
+                    MessageBox.Show("SKUPIO SI POKLON, BRAVO");
                 }
+                if (m!=0)
+                {
+                    Close();
+                }
+            
+                Refresh();
             }
         }
 
@@ -110,19 +118,19 @@ namespace bezi_od_poklona
             }
             
         }
-        int ipsilon = 200;
+        int iks = 200;
         private void timer2_Tick(object sender, EventArgs e)
         {
-          
+            ipsilon = ClientRectangle.Height - 100;
             if (goleft == true)
             {
-                ipsilon -= 40;
+                iks -= 40;
             }
             else if (goright == true)
             {
-                ipsilon += 40;
+                iks += 40;
             }
-            patuljak.Setsve(50, 100, new Point(ipsilon, ClientRectangle.Height - 100)) ;
+            patuljak.Setsve(50, 100, new Point(iks,ClientRectangle.Height - 100));
             Graphics g = CreateGraphics();
             patuljak.nacrtaj(g);
 
